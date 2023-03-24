@@ -1,8 +1,8 @@
 <?php
-$host = "localhost";
-$database_name = "zippyusedautos";
-$username = "mgs_user";
-$password = "pa55word";
+$host = "jtb9ia3h1pgevwb1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+$database_name = "npfxf11d1mq704fe";
+$username = "sbz0foed3y8xx25e";
+$password = "k5a91ow601fmq3ue";
 
 $database = null;
 
@@ -17,7 +17,7 @@ try {
         $database = new PDO($dsn, $username, $password);
     }
 } catch (PDOException $e) {
+    echo $e->getMessage();
     $database = null;
-    include("error.php");
 }
 ?>
