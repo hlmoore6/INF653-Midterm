@@ -26,26 +26,34 @@
         case "edit_makes":
         case "add_make":
         case "remove_make":
+            $current_page = "makes";
             include("./controllers/makes.php");
             break;
 
         case "edit_types":
         case "add_type":
         case "remove_type":
+            $current_page = "types";
             include("./controllers/types.php");
             break;
 
         case "edit_classes":
         case "add_class":
         case "remove_class":
+            $current_page = "classes";
             include("./controllers/classes.php");
             break;
 
-        case "vehicle_list_filter":
         case "add_vehicle":
+            $current_page = "add_vehicle";
+            include("./controllers/add_vehicle.php");
+            break;
+
+        case "vehicle_list_filter":
         case "remove_vehicle":
         case "vehicle_list":
         default: 
+            $current_page = "list_vehicle";
             include("./controllers/vehicles.php");
             break;
     }

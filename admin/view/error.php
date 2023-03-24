@@ -1,13 +1,3 @@
-<?php
-    session_reset();
-?>
-
-<!DOCTYPE html>
-<html>
-    <head>
-    </head>
-
-    <body>
-        <h1>An Error has occurred</h1>
-    </body>
-</html>
+<?php include("./header.php"); ?>
+    <h1>An Error has occurred</h1>
+<?php include("./footer.php"); ?>

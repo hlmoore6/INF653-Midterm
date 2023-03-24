@@ -1,3 +1,249 @@
+html {
+    height: 100%;
+}
+body {
+    width: 100vw;
+    margin: 0;
+
+    height: 100%;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    overflow-x: hidden;
+}
+
 header {
+    border-bottom: 3px solid black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    text-align: center;
+
+    margin-bottom: 1rem;
+
+    text-shadow: #5a5aea 3px 3px;
+    letter-spacing: 0.25rem;
+}
+
+main {
+    margin-inline: auto;
+    width: auto;
+    padding-inline: 2rem;
+
+    overflow-x: hidden;
+}
+
+.vehicle-filter {
+    margin-bottom: 2rem; 
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+}
+
+.vehicle-filter div {
+    margin-block: 0.5rem;
+    margin-inline: auto;
+}
+
+.vehicle-filter .filters {
+    display: flex;
+    flex-direction: column; 
+
+    justify-content: center;
+}
+
+select {
+    width: 100%;
+
+    margin-block: 0.25rem;
+
+    font-size: medium;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 0.25rem;
+}
+
+.sort-filter {
+    font-family: Arial, Helvetica, sans-serif;    
+}
+
+.submit-button {
+    width: 100%;
+    font-size: 1.5rem;
+
+    padding-inline: 1rem;
+
+    background-color: rgb(165, 165, 244); 
+    border-radius: 5px;
+    border: none;
+}
+
+.submit-button:hover {
+    background-color: rgb(100, 100, 166);
+}
+
+footer {
+    margin-top: 1.5rem;
+    padding-bottom: 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    background-color: lightgray;
+
+    padding-block: 2rem;
+    padding-inline: 3rem;
+
+    position: sticky;
+    bottom: 0;
+
+    width: 100vw;
+}
+
+.button-link {
+    border: none;
+    background-color: rgba(0,0,0,0);
+
+    font-size: 1rem;
+
+    margin-inline: 1rem;
+
+    font-weight: bold;
+}
+
+footer form button:hover {
+    font-weight: 800;
+
+    color: rgb(118, 118, 118);
+}
+
+.vehicle-list {
+    border: 3px solid black;
+    border-collapse: collapse;
+
+    padding: 5rem;
+
+    max-width: 5rem;
+}
+
+.vehicle-list-container {
+    overflow-x: scroll;
+
+    width: fit-content;
+
+    margin-inline: auto;
+}
+
+.vehicle-list thead {
+    border-bottom: 2px solid black;
+}
+
+.vehicle-list thead tr th, .vehicle-list tbody tr td {
+    padding: 0.25rem;
+}
+
+.vehicle-list tr:nth-child(even) {
+    background-color: lightblue;
+}
+
+.vehicle-list td {
+    padding: 0;
+}
+
+.edit-category {
 
 }
+
+.add-category input {
+    width: 80%;
+    margin-inline: auto;
+}
+
+.remove-button {
+    background-color: rgb(240, 58, 58);
+
+    border: none;
+    border-radius: 5px;
+
+    padding: 0.25rem;
+}
+
+.remove-button:hover {
+    background-color: rgb(172, 42, 42);
+}
+
+.add-category .submit-button {
+    margin-block: 0.5rem;
+}
+
+.name-input {
+    font-size: 2rem;
+
+    border: 0.25rem solid black;
+    border-radius: 0.25rem;
+}
+
+option {
+    font-size: 0.75rem;
+}
+
+table {
+    max-width: 100%;
+    overflow-x: scroll;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+    html {
+        font-size: 32px;
+    }
+
+    footer {
+        padding-block: 0.25rem;
+        padding-inline: 0.5rem;
+    }
+
+    .button-link {
+        font-size: 1rem;
+        margin-inline: 0.25rem;
+    }
+
+    select {
+        height: 3rem;
+        font-size: 2rem;
+    }
+
+    .submit-button {
+        font-size: 2.5rem;
+    }
+
+    .edit-category {
+        font-size: 2rem;
+    }
+
+    .remove-button {
+        font-size: 2rem;
+        border-radius: 0.5rem;
+    }
+
+    .sort-filter input[type=radio] {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .add-category label {
+        font-size: 1.5rem;
+    }
+
+    .name-input {
+        font-size: 2rem;
+
+        border: 0.25rem solid black;
+        border-radius: 0.25rem;
+    }
+
+    .vehicle-list {
+    }
+}
+
+
